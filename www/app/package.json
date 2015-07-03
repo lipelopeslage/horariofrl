@@ -1,0 +1,35 @@
+{
+  "name": "horariosfatec",
+  "version": "0.0.0",
+  "description": "dependencias horariosfatec",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.0.1",
+    "gulp-stylus": "^2.0.0",
+    "gulp-watch": "^4.1.1",
+    "gulp": "^3.8.11",
+    "gulp-uglify": "^1.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.0.1",
+    "gulp-stylus": "^2.0.0",
+    "gulp-uglify": "^1.1.0",
+    "gulp-watch": "^4.1.1",
+    "gulp-install": "^0.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "--"
+  },
+  "keywords": [
+    "santos",
+    "fatec",
+    "fatecrl",
+    "baixadasantista"
+  ],
+  "author": "Felipe Lopes Lage",
+  "license": "BSD"
+}

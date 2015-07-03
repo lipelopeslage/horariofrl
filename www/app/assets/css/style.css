@@ -1,0 +1,135 @@
+@import "fonts/stylessheet.css";
+html,
+body {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.alert#search-update {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  margin-bottom: 0;
+  z-index: 99;
+}
+body {
+  display: none;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+}
+body main {
+  padding: 0 !important;
+}
+body h1 {
+  margin: 0 0 20px 0;
+}
+body .vardump {
+  display: block;
+  position: relative;
+  font-size: 12px;
+}
+body .tab-pane h2 {
+  font-size: 16px;
+  padding: 16px 46px;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+}
+body .tab-pane h2.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9;
+}
+body .tab-pane#si h2 {
+  background-color: #0396d8;
+}
+body .tab-pane#ads h2 {
+  background-color: #1668b9;
+}
+body .tab-pane#ge h2 {
+  background-color: #4ea26a;
+}
+body .tab-pane#gp h2 {
+  background-color: #429a8a;
+}
+body .tab-pane#lo h2 {
+  background-color: #6e5494;
+}
+body footer {
+  padding: 10px 0;
+}
+body .panel-title a {
+  display: block !important;
+  width: 100%;
+}
+body .panel-title a:hover {
+  text-decoration: none;
+}
+body .nav-tabs {
+  margin-bottom: -2px;
+  border: 0 !important;
+}
+body .nav-tabs.blocked:before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background: #f0f0f0;
+  opacity: 0.2;
+  z-index: 9;
+  content: "";
+}
+body .nav-tabs li:hover a {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+body .nav-tabs li.active {
+  border: 0 !important;
+}
+body .nav-tabs li.active a {
+  border: 0 !important;
+  color: #fff;
+}
+body .nav-tabs li.active a:active,
+body .nav-tabs li.active a:hover {
+  color: #fff;
+}
+body .nav-tabs li.active a[href="#ads"] {
+  background-color: #1668b9 !important;
+}
+body .nav-tabs li.active a[href="#si"] {
+  background-color: #0396d8 !important;
+}
+body .nav-tabs li.active a[href="#ge"] {
+  background-color: #4ea26a !important;
+}
+body .nav-tabs li.active a[href="#gp"] {
+  background-color: #429a8a !important;
+}
+body .nav-tabs li.active a[href="#lo"] {
+  background-color: #6e5494 !important;
+}
+body .panel.panel-default {
+  margin-bottom: 6px;
+}
+body .panel-heading {
+  position: relative;
+}
+body .panel-heading .fav {
+  display: block;
+  position: absolute;
+  right: 6px;
+  top: 3px;
+  background-color: #c7c7c7;
+  padding: 3px 7px;
+  border-radius: 20px;
+}
+body .panel-heading .fav span {
+  font-size: 15px;
+  font-family: Verdana;
+  color: #fff;
+}
+body .panel-heading .fav.selected {
+  background-color: #fd9e9c;
+}

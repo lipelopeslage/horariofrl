@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+<head>
+    <title>Blank Standard HTML5 Web App Template</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+    <link rel="stylesheet" href="app/vendors/css/bootstrap/fatec-bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="app/vendors/css/bootswatch/bootswatch.min.css"> -->
+    <link rel="stylesheet" href="app/assets/css/style.css">
+    
+    <style>
+        /* following two viewport lines are equivalent to meta viewport statement above, needed for Windows */
+        /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }  @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }           @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        /* Prevent copy paste for all elements except text fields */
+        *  { -webkit-user-select:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0); }
+        input, textarea  { -webkit-user-select:text; }
+        /*body { background-color:white; color:black }*/
+    </style>
+
+
+    
+
+</head>
+
+<body>
+
+    <header>
+        <h1 class="text-center">
+            <img src="app/assets/img/title.jpg" class="img-responsive" alt="Horários - Fatec Rubens Lara">
+        </h1>
+
+    </header>
+    
+    <main class="container-fluid">
+        <div role="tabpanel">
+        
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs blocked" role="tablist">
+            <li role="presentation"><a href="#si" aria-controls="si" role="tab" data-toggle="tab">SI</a></li>       
+            <li role="presentation"><a href="#ge" aria-controls="ge" role="tab" data-toggle="tab">GE</a></li>
+            <li role="presentation"><a href="#gp" aria-controls="gp" role="tab" data-toggle="tab">GP</a></li>
+            <li role="presentation"><a href="#lo" aria-controls="lo" role="tab" data-toggle="tab">LO</a></li>
+            <li role="presentation"><a href="#ads" aria-controls="ads" role="tab" data-toggle="tab">ADS</a></li>
+          </ul>
+        
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="si">
+                 
+            </div>
+            <div role="tabpanel" class="tab-pane" id="ads">
+        
+            </div>
+            <div role="tabpanel" class="tab-pane" id="ge">
+        
+            </div>
+            <div role="tabpanel" class="tab-pane" id="lo">
+        
+            </div>
+            <div role="tabpanel" class="tab-pane" id="gp">
+        
+            </div>
+          </div>
+        
+        </div>
+    </main>
+
+
+    <footer class="text-center">
+        Criado por Felipe Lopes Lage
+    </footer>
+    
+    <div class="modal fade" id="modal-fav">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Modal title</h4>
+              </div> -->
+              <div class="modal-body">
+                <p class="text-center"></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">cancelar</button>
+                <button type="button" class="btn btn-primary">confirmar</button>
+              </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    
+
+    <script src="app/vendors/js/jquery/jquery-1.11.2.min.js"></script>
+    <script src="app/vendors/js/bootstrap/bootstrap.min.js"></script>
+    <script src="app/assets/js/script.js"></script>
+    <script src="app/assets/js/view.js"></script>
+
+    <script src="cordova.js"></script>          <!-- "Phantom" cordova.js required for projects that use plugins -->
+
+    <script src="js/app.js"></script>           <!-- for your event code, see README and file comments for details -->
+    <script src="js/init-app.js"></script>      <!-- for your init code, see README and file comments for details -->
+    <script src="xdk/init-dev.js"></script>     <!-- normalizes device and document ready events, see file for details -->
+    
+    <script type='text/javascript' id="__bs_script__">//<![CDATA[
+    //document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.2.1.js'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+</body>
+</html>

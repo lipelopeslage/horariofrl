@@ -1,0 +1,67 @@
+//@import 'reset.css'
+//@import 'fonts/fonts.css'
+
+
+$led = #3b3b3b
+$lightgray = #555555
+$darkgray = #424242
+$green = #048079
+$red = #8f1616
+
+none()
+	display none
+
+table-relative()
+	display table
+	position relative
+
+none-absolute()
+	none()
+	position absolute
+
+block-absolute()
+	display block
+	position absolute
+
+block-relative()
+	display block
+	position relative
+
+inline-block-relative()
+	display inline-block
+	position relative
+
+dimensions($w = 100px, $h = 100px, $bg = red)
+	width $w
+	height $h
+	background $bg
+	
+set_font(ff = opensans_regular, fz = 10, lh = auto, c = white, ta = none, tt = none)
+	font-family ff
+	font-size fz
+	line-height lh
+	color c
+	text-align ta
+	text-transform tt
+	
+
+act_fixed()
+	margin-top 0 !important
+	background-color white !important
+	.navbar-brand
+		margin-right 10px !important
+		margin-top -1px !important
+		width 100px !important
+		height 60px !important
+		background-position -15px -75px !important
+	ul.navbar-search
+		li
+			padding-top 11px
+	ul
+		li
+			a
+				top 4px !important
+				padding-top 14px
+			&.line-break
+				clear none
+				

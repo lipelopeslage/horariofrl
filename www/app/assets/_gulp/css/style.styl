@@ -1,0 +1,123 @@
+@import "utils.styl"
+@import "fonts/stylessheet.css"
+
+html, body
+	border 0
+	padding 0
+	margin 0
+	
+
+.alert#search-update
+	position fixed
+	width 100%
+	bottom 0
+	margin-bottom 0
+	z-index 99
+	
+body
+	none()
+	background-color #f0f0f0
+	overflow-x hidden
+	
+	main
+		padding 0 !important	
+	
+	h1
+		margin 0 0 20px 0
+	.vardump
+		block-relative()
+		font-size 12px
+  			
+	.tab-pane
+		h2
+			font-size 16px
+			padding 16px 46px
+			margin 0
+			color white
+			text-align center
+			-webkit-translateZ(1px);
+			translateZ(1px);
+			&.fixed
+				position fixed
+				width 100%
+				top 0
+				z-index 9
+				
+				
+		&#si
+			h2
+				background-color #0396d8
+		&#ads
+			h2
+				background-color #1668b9
+		&#ge
+			h2
+				background-color #4ea26a
+		&#gp
+			h2
+				background-color #429a8a
+		&#lo
+			h2
+				background-color #6e5494
+
+	footer
+		padding 10px 0
+	
+	.panel-title a
+		display block !important
+		width 100%
+		&:hover
+			text-decoration none
+
+	.nav-tabs
+		margin-bottom -2px
+		border 0 !important
+		&.blocked
+			&:before
+				block-absolute()
+				dimensions(100%, 50px, #f0f0f0)
+				opacity .2
+				
+				z-index 9
+
+				content ""
+		li:hover a
+			background-color transparent !important
+			border 0 !important
+		li.active
+			border 0 !important
+			a
+				border 0 !important
+				color white
+				&:active, &:hover, &:hover
+					color white
+				&[href="#ads"]
+					background-color #1668b9 !important
+				&[href="#si"]
+					background-color #0396d8 !important
+				&[href="#ge"]
+					background-color #4ea26a !important
+				&[href="#gp"]
+					background-color #429a8a !important
+				&[href="#lo"]
+					background-color #6e5494 !important
+			
+	.panel.panel-default
+		margin-bottom 6px		
+	.panel-heading
+		position relative
+		.fav
+			display block
+			position absolute
+			right 6px
+			top 3px
+			background-color #c7c7c7
+			padding 3px 7px
+			border-radius 20px
+			span
+				font-size 15px
+				font-family Verdana;
+				color white
+			&.selected
+				background-color #FD9E9C
+				

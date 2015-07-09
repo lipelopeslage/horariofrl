@@ -19,6 +19,24 @@
 				_this.doOfflineThing();
 			}
 			_this.view.init();
+
+			var previousConnectionState = "";
+			document.addEventListener("intel.xdk.device.connection.update",function(e){
+				if (previousConnectionState != intel.xdk.device.connection)
+		        {
+		                previousConnectionState = intel.xdk.device.connection;
+		                alert('mudou status de rede pra:\n'+previousConnectionState);
+		        }
+		        setTimeout("intel.xdk.device.updateConnection();",2000);
+		          //after we get an update on the connection, check again 2 seconds later
+			},false);
+
+			setTimeout("intel.xdk.device.updateConnection();",2000);
+
+
+			document.addEventListener("intel.xdk.device.resume",function(e){
+			    //alert('voltou ao aplicativo')
+			},false);
 		},
 		doOnlineThing : function(){
 			var _this = this, url = this.onlineJSONURL;

@@ -20,12 +20,19 @@
 			}
 			_this.view.init();
 
+			/*var txt = "<span style='font-size:11px;'>";
+			for(var i in window.device){
+				txt += i+":"+window.device[i]+"<br>";
+			}
+			txt+="</span>"
+			$("h1").append(txt)*/
+
 			var previousConnectionState = "";
 			document.addEventListener("intel.xdk.device.connection.update",function(e){
 				if (previousConnectionState != intel.xdk.device.connection)
 		        {
 		                previousConnectionState = intel.xdk.device.connection;
-		                alert('mudou status de rede pra:\n'+previousConnectionState);
+		                //alert('mudou status de rede pra:\n'+previousConnectionState);
 		        }
 		        setTimeout("intel.xdk.device.updateConnection();",2000);
 		          //after we get an update on the connection, check again 2 seconds later

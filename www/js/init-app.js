@@ -42,7 +42,7 @@ app.initEvents = function() {
     "use strict" ;
     app.hideSplashScreen() ;    // after init is good time to remove splash screen; using a splash screen is optional
 
-    
+    console.log(app)
 } ;
 document.addEventListener("app.Ready", app.initEvents, false) ;
 

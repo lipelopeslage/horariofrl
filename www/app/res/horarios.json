@@ -1,10 +1,15 @@
 {	
-	"versionID" : "105",
+	"versionID" : "113",
 	"creditos":[
 		{
 			"credito" : "Criado por ",
 			"nome" : "Felipe Lopes Lage",
 			"url" : "http://www.lipelopeslage.com.br"
+		},
+		{
+			"credito" : "Desenvolvido em conjunto<br> com ",
+			"nome" : "Equipe WEB",
+			"url" : "http://fatecrl.edu.br/site/setores/web"
 		}
 	],
 	"cursos" : {

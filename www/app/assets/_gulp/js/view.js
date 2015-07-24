@@ -5,16 +5,15 @@
 			_this.modal = $("#modal-fav");
 			_this.modalBtn = _this.modal.find("button.btn-primary");
 			_this.modalBtn.click(function(){return _this.modalAction();});
+			
 			$("body").fadeIn(100);
 			$("main").css("min-height", (win.height() - 150)+"px");
-			if(_this.json) _this.fillCredits(); // só muda os creditos quando puxar do
+
+			this.bind();
 			if(root.favorito) _this.openFavorite(); 
-
-
 
 			win.scroll(function(){
 				var top = win.scrollTop(), h2 = $(".tab-pane.active h2"), h2Top = h2.parent().offset().top;
-				//console.log('scroll ', top, h2Top)
 				if(top > h2Top){
 					if(!h2.hasClass('fixed'))
 						h2.addClass('fixed').parent().css('padding-top', h2.outerHeight()+'px');
@@ -22,9 +21,7 @@
 					if(h2.hasClass('fixed'))
 						h2.removeClass('fixed').parent().css('padding-top','0px');
 				}
-			})
-
-
+			});
 		},
 		bind : function (){
 			var _this = this;
@@ -113,24 +110,33 @@
 
 		}, 
 		fillCredits : function(){
-			var creditos = myApp.json.creditos, html = "", credito, nome, link;
+			var creditos = myApp.json.creditos, htmls = "", credito, nome, link;
 			for(i in creditos){
+				console.log(creditos[i])
 				item = creditos[i];
 				nome = item.nome;
-				url = item.url;
-				link = (item.url) ? "<a href='"+url+"' target='_blank'>"+nome+"</a>" : nome;
-				html += item.credito+link+"<br>";
+				url = '"'+item.url+'"';
+				link = (item.url) ? "<a onclick='intel.xdk.device.launchExternal("+url+")' >"+nome+"</a>" : nome;
+				htmls += item.credito+link+"<br>";
 			}
-			$("footer").html(html);
+			$("footer").html(htmls);
 		},
 		openFavorite : function(){
 			var _this = this, fav = root.favorito, curso = fav.curso, semestre = fav.semestre;
 			$(".panel-collapse").css("transition", "none");
 			$(".nav.nav-tabs li a[aria-controls="+curso+"]").trigger("click");
+
+			function scrollToFavorite(){
+				var semestreBtn = $("#"+root.favorito.semestre);
+				$("html,body").animate({"scrollTop":(semestreBtn.offset().top-$(".tab-pane.active h2").outerHeight())+"px"}, function(){
+					$(".panel-collapse").css("transition", "all .4s ease-in-out");
+				})
+			}
+
 			setTimeout(function(){
 				$(".tab-content .tab-pane#"+curso+" .panel-heading#"+semestre+" a").trigger("click").
 				parent().siblings('.fav').addClass('selected');
-				setTimeout(_this.scrollToFavorite, 300);
+				setTimeout(scrollToFavorite, 300);
 			},300);		
 		},
 		modalAction : function(){
@@ -154,12 +160,6 @@
 		},
 		changeFavModal : function(text){
 			this.modal.find(".modal-body .text-center").html(text);
-		},
-		scrollToFavorite : function(){
-			var semestreBtn = $("#"+root.favorito.semestre);
-			$("html,body").animate({"scrollTop":(semestreBtn.offset().top-$(".tab-pane.active h2").outerHeight())+"px"}, function(){
-				$(".panel-collapse").css("transition", "all .4s ease-in-out");
-			})
 		}
 	}
 })(window.myApp, jQuery)

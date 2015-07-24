@@ -54,7 +54,7 @@
 						semestreCurso = periodoCurso.semestres[y];
 						panel = defaultPanel.clone();
 						semanaCurso = semestreCurso.dias_semana;
-						_this.fillPanel(panel, semestreCurso, nomeCurso, count++);
+						_this.fillPanel(panel, semestreCurso, nomeCurso, periodoCurso.periodo, count++);
 						htmlTemplate.append(panel);
 					}					
 				}
@@ -80,10 +80,10 @@
 				});
 			});
 		},
-		fillPanel : function(panel, semestre, nomeCurso, count){
+		fillPanel : function(panel, semestre, nomeCurso, periodo, count){
 			var title = panel.find(".panel-title a"), body = panel.find(".panel-body"),
-				dias_semana = semestre.dias_semana, html = "", index = String(nomeCurso+semestre.legenda.replace(/(º )/ ,"")).replace(/ /g,"");//String("_"+count);
-
+				dias_semana = semestre.dias_semana, html = "", index = String(nomeCurso+periodo+semestre.legenda.replace(/(º )/ ,"")).replace(/ /g,"");//String("_"+count);
+			
 			if(count == 0){
 				//title.attr("aria-expanded", "true");	
 				//panel.find(".panel-collapse").addClass("in");
@@ -99,7 +99,7 @@
 			html += horarios("Quinta", dias_semana["quinta"]);
 			html += horarios("Sexta", dias_semana["sexta"]);
 			html += horarios("Sábado", dias_semana["sabado"]);
-			title.html(semestre.legenda);
+			title.html(semestre.legenda+" ("+periodo+")");
 			body.html(html);
 
 			function horarios(text, dias_semana){

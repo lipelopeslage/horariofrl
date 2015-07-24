@@ -13,11 +13,12 @@
 			_this.favorito = (localStorage && localStorage.favorito) ? JSON.parse(localStorage.favorito) : null;
 			
 			
-			if(intel.xdk.device.connection != "none"){ // se tiver conexão, verifica cache e equipara com json local
+			/*if(intel.xdk.device.connection != "none"){ // se tiver conexão, verifica cache e equipara com json local
 				_this.doOnlineThing(); 
 			}else{ // se não tiver conexão, verifica cache e então carrega json local, caso não haja cache
 				_this.doOfflineThing();
-			}
+			}*/
+			_this.doOfflineThing();
 			_this.view.init();
 
 			/*var txt = "<span style='font-size:11px;'>";

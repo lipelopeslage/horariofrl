@@ -23,6 +23,19 @@
 				}
 			});
 		},
+		reset : function(){
+			var _this = this;
+			$(".nav-tabs").removeClass("blocked").find("li a").each(function(){
+				var curso = $(this).attr("aria-controls");
+				_this.loadTemplate(curso, true);
+			});	
+			setTimeout(function(){
+				$(".tab-pane.active h2").removeClass('fixed').parent().css('padding-top', '0px');
+				if(root.favorito){			
+					$("#"+root.favorito.semestre+" .fav").addClass('selected');
+				}
+			}, 300);
+		},
 		bind : function (){
 			var _this = this;
 			$(".nav-tabs").removeClass("blocked").find("li a").click(function(){
@@ -30,12 +43,15 @@
 				_this.loadTemplate(curso);
 			});			
 		},
-		loadTemplate : function(id){
+		loadTemplate : function(id, reset){
 			var _this = this, periodosCurso = myApp.json.cursos[id], semestres = [], dias_semana = [],
 				nomeCurso = periodosCurso[0].nome, html = "", htmlTemplate, defaultPanel, panel, count = 0;
 
 			htmlTemplate = $("body .tab-content .tab-pane#"+id);
-
+			if(reset){
+				htmlTemplate.html("");
+				this.loadTemplate(id);
+			}
 			if(htmlTemplate.html().trim() != "") return;
 			
 			htmlTemplate.load("app/html/template_horarios.html", function(){
@@ -115,8 +131,8 @@
 				console.log(creditos[i])
 				item = creditos[i];
 				nome = item.nome;
-				url = '"'+item.url+'"';
-				link = (item.url) ? "<a onclick='intel.xdk.device.launchExternal("+url+")' >"+nome+"</a>" : nome;
+				url = '"'+item.url+'", "_system"';
+				link = (item.url) ? "<a onclick='window.open("+url+")' >"+nome+"</a>" : nome;
 				htmls += item.credito+link+"<br>";
 			}
 			$("footer").html(htmls);

@@ -21,12 +21,40 @@ body
 	
 	main
 		padding 0 !important	
+		
+	header
+		background url(../img/header.gif) repeat-x
 	
 	h1
 		margin 0 0 20px 0
+		min-height 116px
+		text-indent -9999px
+		background white url(../img/header1.gif) no-repeat 10px 10px
+		&:before
+			block-absolute()
+			dimensions(129px, 80px, url(../img/fatec.jpg))
+			right 10px
+			top 14px
+			content ""
 	.vardump
 		block-relative()
 		font-size 12px
+		
+	.refresh
+		relative()
+		margin-bottom 20px
+		.btn
+			position relative !important
+			padding-left 20px				
+			&:before
+				block-absolute()
+				dimensions(25px, 28px, url(../img/refresh-icon.png))
+				top -2px
+				left 2px
+				content ""
+			&:hover, &:focus
+				background-color white !important
+				outline none
   			
 	.tab-pane
 		h2

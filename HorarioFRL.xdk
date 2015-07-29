@@ -5,7 +5,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "https://appcenter.html5tools-software.intel.com/api/v2.0/redirect/projectrenderers/release-2015-ww25/jsapp/templates-blank-cordova-project/sample.zip",
       "projectGuid": "70fb21d8-0537-413d-9c6d-34651c045408",
-      "lastModifiedDate": 1437757377425,
+      "lastModifiedDate": 1438196217476,
       "creationDate": 1435870149443
     },
     "XDK-app-designer": "false",
@@ -27,7 +27,8 @@
         "dependedBy": []
       },
       {
-        "id": "intel.xdk.device",
+        "id": "org.apache.cordova.device",
+        "version": "0.2.13",
         "selectedState": "Included",
         "data": {},
         "paramvals": {},
@@ -35,8 +36,22 @@
         "dependedBy": []
       },
       {
-        "id": "org.apache.cordova.device",
-        "version": "0.2.13",
+        "id": "org.apache.cordova.network-information",
+        "version": "",
+        "selectedState": "Included",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": [],
+        "custom": "true",
+        "name": "Cordova Network Information Plugin",
+        "origin": "org.apache.cordova.network-information",
+        "originType": "local",
+        "sourceLocation": ""
+      },
+      {
+        "id": "org.apache.cordova.inappbrowser",
+        "version": "0.5.4",
         "selectedState": "Included",
         "data": {},
         "paramvals": {},
@@ -85,7 +100,7 @@
           "android-targetSdkVersion": "10",
           "android-installLocation": "auto",
           "android-signed": true,
-          "Orientation": "portrait",
+          "Orientation": "default",
           "Fullscreen": true
         },
         "isActive_": true,

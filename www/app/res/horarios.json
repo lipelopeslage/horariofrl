@@ -1,5 +1,5 @@
 {	
-	"versionID" : "113",
+	"versionID" : "165",
 	"creditos":[
 		{
 			"credito" : "Criado por ",
@@ -10,6 +10,11 @@
 			"credito" : "Desenvolvido em conjunto<br> com ",
 			"nome" : "Equipe WEB",
 			"url" : "http://fatecrl.edu.br/site/setores/web"
+		},
+		{
+			"credito" : "Agradecimentos ao <br>",
+			"nome" : "profº Jorge Luiz Chiara",
+			"url" : "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4756317U3"
 		}
 	],
 	"cursos" : {
@@ -25,7 +30,7 @@
 									"segunda" : [
 											{
 												"horario" : "13:20 - 15:00",
-												"professor": "Fulano",
+												"professor": "Fulano XYZ",
 												"materia": "Materia Tal",
 												"cd_materia": "IS00"
 											},
@@ -424,6 +429,272 @@
 				{
 					"nome" : "Análise e Desenvolvimento de Sistemas",
 					"periodo" : "Manhã",
+					"semestres" : [
+						{	
+							"legenda" : "1º Semestre",
+							"dias_semana" : 
+								{
+									"segunda" : [
+											{
+												"horario" : "13:20 - 15:00",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											},
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											}
+									],
+									"terca" : [
+										
+											{
+												"horario" : "13:20 - 15:00",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											},
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											}
+										
+									],
+									"quarta" : [
+										
+											{
+												"horario" : "13:20 - 15:00",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											},
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											}
+										
+									],
+									"quinta" : [
+										
+											{
+												"horario" : "13:20 - 15:00",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											},
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											}
+										
+									],
+									"sexta" : [
+										
+											{
+												"horario" : "13:20 - 15:00",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											},
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											}
+										
+									],
+									"sabado" : [
+										
+											{
+												"horario" : "08:00 - 11:30",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											},
+											{
+												"horario" : "12:20 - 13:10",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											}
+										
+									]
+								}
+						},
+						{	
+							"legenda" : "2º Semestre",
+							"dias_semana" : 
+								{
+									"segunda" : [
+											{
+												"horario" : "13:20 - 15:00",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											},
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											}
+									],
+									"terca" : [
+										
+											{
+												"horario" : "13:20 - 15:00",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											},
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											}
+										
+									],
+									"quarta" : [
+										
+											{
+												"horario" : "13:20 - 15:00",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											},
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											}
+										
+									],
+									"quinta" : [
+										
+											{
+												"horario" : "13:20 - 15:00",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											},
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											}
+										
+									],
+									"sexta" : [
+										
+											{
+												"horario" : "13:20 - 15:00",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											},
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											}
+										
+									],
+									"sabado" : [
+										
+											{
+												"horario" : "08:00 - 11:30",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											},
+											{
+												"horario" : "12:20 - 13:10",
+												"professor": "Fulano",
+												"materia": "Materia Tal",
+												"cd_materia": "IS00"
+											}
+										
+									]
+								}
+						}
+					]
+				},
+				{
+					"nome" : "Análise e Desenvolvimento de Sistemas",
+					"periodo" : "Noite",
 					"semestres" : [
 						{	
 							"legenda" : "1º Semestre",

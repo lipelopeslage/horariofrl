@@ -96,7 +96,7 @@
 		fillPanel : function(panel, semestre, nomeCurso, periodo, count){
 			var title = panel.find(".panel-title a"), body = panel.find(".panel-body"),
 				dias_semana = semestre.dias_semana, html = "", index = String(nomeCurso+periodo+semestre.legenda).replace(/,| |º/g,"");//String("_"+count);
-			console.log("fill: ", index)
+			
 			if(count == 0){
 				//title.attr("aria-expanded", "true");	
 				//panel.find(".panel-collapse").addClass("in");
@@ -128,7 +128,6 @@
 		fillCredits : function(){
 			var creditos = myApp.json.creditos, htmls = "", credito, nome, link;
 			for(i in creditos){
-				console.log(creditos[i])
 				item = creditos[i];
 				nome = item.nome;
 				url = '"'+item.url+'", "_system"';

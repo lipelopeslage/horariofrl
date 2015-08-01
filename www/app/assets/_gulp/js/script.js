@@ -13,11 +13,13 @@
 			_this.favorito = (localStorage && localStorage.favorito) ? JSON.parse(localStorage.favorito) : null;
 			
 			
-			if(navigator.connection.type != "Connection.UNKNOWN" || navigator.connection.type != "Connection.NONE"){ // se tiver conexão, verifica cache e equipara com json local
+			/*if(navigator.connection.type != "Connection.UNKNOWN" || navigator.connection.type != "Connection.NONE"){ // se tiver conexão, verifica cache e equipara com json local
 				_this.doOnlineThing();
 			}else{ // se não tiver conexão, verifica cache e então carrega json local, caso não haja cache
 				_this.doOfflineThing();
-			}
+			}*/
+
+			_this.doOfflineThing();
 
 			_this.view.init();
 			
@@ -69,7 +71,7 @@
 					_this.json = localJSON;
 				}else{
 					timeout = 5000;
-					_this.showWarning("Houveram mudanças nos horários, não se preocupe, seu aplicativo já está atualizado =)", "success", "search-update");
+					_this.showWarning("Houve mudanças nos horários, não se preocupe, seu aplicativo já está atualizado =)", "success", "search-update");
 					_this.json = newJSON;
 					localStorage.setItem("json", JSON.stringify(newJSON));
 					_this.view.reset();

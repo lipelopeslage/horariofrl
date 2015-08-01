@@ -95,8 +95,8 @@
 		},
 		fillPanel : function(panel, semestre, nomeCurso, periodo, count){
 			var title = panel.find(".panel-title a"), body = panel.find(".panel-body"),
-				dias_semana = semestre.dias_semana, html = "", index = String(nomeCurso+periodo+semestre.legenda.replace(/(º )/ ,"")).replace(/ /g,"");//String("_"+count);
-			
+				dias_semana = semestre.dias_semana, html = "", index = String(nomeCurso+periodo+semestre.legenda).replace(/,| |º/g,"");//String("_"+count);
+			console.log("fill: ", index)
 			if(count == 0){
 				//title.attr("aria-expanded", "true");	
 				//panel.find(".panel-collapse").addClass("in");
@@ -118,7 +118,7 @@
 			function horarios(text, dias_semana){
 				var html = "<table class='table'><thead><tr><th>"+text+"</th></tr></thead><tbody>";
 				for(dia in dias_semana){
-					html += "<tr><td>"+dias_semana[dia].horario+" - "+dias_semana[dia].materia+" ("+dias_semana[dia].professor+")</td></tr>";
+					html += "<tr><td>"+dias_semana[dia].horario+" : "+dias_semana[dia].materia+" ("+dias_semana[dia].professor+")</td></tr>";
 				}
 				html += "</tbody></table>";
 				return html;

@@ -10,7 +10,13 @@
 			$("main").css("min-height", (win.height() - 150)+"px");
 
 			this.bind();
-			if(root.favorito) _this.openFavorite(); 
+			if(root.favorito) {
+				_this.openFavorite(); 
+			}else {
+				setTimeout(function(){
+					$(".nav-tabs li:eq(0) a").trigger("click");
+				}, 300);
+			}
 
 			win.scroll(function(){
 				var top = win.scrollTop(), h2 = $(".tab-pane.active h2"), h2Top = h2.parent().offset().top;

@@ -1,5 +1,5 @@
 {	
-	"versionID" : "180",
+	"versionID" : "183",
 	"creditos":[
 		{
 			"credito" : "Criado por ",
@@ -3511,109 +3511,79 @@
 								{
 									"segunda" : [
 											{
-												"horario" : "13:20 - 15:00",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
-											},
-											{
 												"horario" : "15:00 - 16:40",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"professor": "Vanina",
+												"materia": "LPO-001",
+												"cd_materia": "LPO-001"
 											},
 											{
 												"horario" : "16:50 - 18:30",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"professor": "Pozo",
+												"materia": "JLG-951",
+												"cd_materia": "JLG-951"
 											}
 									],
 									"terca" : [
 										
 											{
-												"horario" : "13:20 - 15:00",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
-											},
-											{
 												"horario" : "15:00 - 16:40",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"professor": "Gerson",
+												"materia": "INF-001",
+												"cd_materia": "INF-001"
 											},
 											{
 												"horario" : "16:50 - 18:30",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"professor": "Klim",
+												"materia": "TTG-100",
+												"cd_materia": "TTG-100"
 											}
 										
 									],
 									"quarta" : [
 										
 											{
-												"horario" : "13:20 - 15:00",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
-											},
-											{
 												"horario" : "15:00 - 16:40",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"professor": "Vanina",
+												"materia": "LPO-001",
+												"cd_materia": "LPO-001"
 											},
 											{
 												"horario" : "16:50 - 18:30",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"professor": "Sueli",
+												"materia": "AAG-001",
+												"cd_materia": "AAG-001"
 											}
 										
 									],
 									"quinta" : [
 										
 											{
-												"horario" : "13:20 - 15:00",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
-											},
-											{
 												"horario" : "15:00 - 16:40",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"professor": "Klim",
+												"materia": "MCA-003",
+												"cd_materia": "MCA-003"
 											},
 											{
 												"horario" : "16:50 - 18:30",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"professor": "Sueli",
+												"materia": "AAG-001",
+												"cd_materia": "AAG-001"
 											}
 										
 									],
 									"sexta" : [
 										
 											{
-												"horario" : "13:20 - 15:00",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
-											},
-											{
 												"horario" : "15:00 - 16:40",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"professor": "Eveline",
+												"materia": "LIN-100",
+												"cd_materia": "LIN-100"
 											},
 											{
 												"horario" : "16:50 - 18:30",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"professor": "Klim",
+												"materia": "MCA-003",
+												"cd_materia": "MCA-003"
 											}
 										
 									],
@@ -3621,15 +3591,9 @@
 										
 											{
 												"horario" : "08:00 - 11:30",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
-											},
-											{
-												"horario" : "12:20 - 13:10",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"professor": "Klim",
+												"materia": "TJI-001",
+												"cd_materia": "TJI-001"
 											}
 										
 									]
@@ -3641,109 +3605,79 @@
 								{
 									"segunda" : [
 											{
-												"horario" : "13:20 - 15:00",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
-											},
-											{
 												"horario" : "15:00 - 16:40",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"professor": "Bárbara",
+												"materia": "LIN-200",
+												"cd_materia": "LIN-200"
 											},
 											{
 												"horario" : "16:50 - 18:30",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"professor": "Luciana",
+												"materia": "MCA-022",
+												"cd_materia": "MCA-022"
 											}
 									],
 									"terca" : [
 										
 											{
-												"horario" : "13:20 - 15:00",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
-											},
-											{
 												"horario" : "15:00 - 16:40",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"professor": "Thames",
+												"materia": "ETI-002",
+												"cd_materia": "ETI-002"
 											},
 											{
 												"horario" : "16:50 - 18:30",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"professor": "Edna",
+												"materia": "AGQ-001",
+												"cd_materia": "AGQ-001"
 											}
 										
 									],
 									"quarta" : [
 										
 											{
-												"horario" : "13:20 - 15:00",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
-											},
-											{
 												"horario" : "15:00 - 16:40",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"professor": "Lourval",
+												"materia": "MET-102",
+												"cd_materia": "MET-102"
 											},
 											{
 												"horario" : "16:50 - 18:30",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"professor": "Klim",
+												"materia": "MMF-001",
+												"cd_materia": "MMF-001"
 											}
 										
 									],
 									"quinta" : [
 										
 											{
-												"horario" : "13:20 - 15:00",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
-											},
-											{
 												"horario" : "15:00 - 16:40",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"professor": "Thames",
+												"materia": "ETI-002",
+												"cd_materia": "ETI-002"
 											},
 											{
 												"horario" : "16:50 - 18:30",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"professor": "Lourval",
+												"materia": "MET-102",
+												"cd_materia": "MET-102"
 											}
 										
 									],
 									"sexta" : [
 										
 											{
-												"horario" : "13:20 - 15:00",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
-											},
-											{
 												"horario" : "15:00 - 16:40",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"professor": "Jamir",
+												"materia": "CCG-001",
+												"cd_materia": "CCG-001"
 											},
 											{
 												"horario" : "16:50 - 18:30",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"professor": "Açucena",
+												"materia": "LES-100",
+												"cd_materia": "LES-100"
 											}
 										
 									],
@@ -3751,15 +3685,391 @@
 										
 											{
 												"horario" : "08:00 - 11:30",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"professor": "Edna",
+												"materia": "TJI-002",
+												"cd_materia": "TJI-002"
+											}
+										
+									]
+								}
+						},
+						{	
+							"legenda" : "3º Semestre",
+							"dias_semana" : 
+								{
+									"segunda" : [
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "L. Fernando",
+												"materia": "CEF-003",
+												"cd_materia": "CEF-003"
 											},
 											{
-												"horario" : "12:20 - 13:10",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"horario" : "16:50 - 18:30",
+												"professor": "Simone D.",
+												"materia": "AGR-101",
+												"cd_materia": "AGR-101"
+											}
+									],
+									"terca" : [
+										
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Mário",
+												"materia": "AGP-300",
+												"cd_materia": "AGP-300"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Mário",
+												"materia": "AGP-300",
+												"cd_materia": "AGP-300"
+											}
+										
+									],
+									"quarta" : [
+										
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "L. Fernando",
+												"materia": "CEF-003",
+												"cd_materia": "CEF-003"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Valéria",
+												"materia": "LIN-300",
+												"cd_materia": "LIN-300"
+											}
+										
+									],
+									"quinta" : [
+										
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Ruy",
+												"materia": "MPO-100",
+												"cd_materia": "MPO-100"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Ruy",
+												"materia": "MPO-100",
+												"cd_materia": "MPO-100"
+											}
+										
+									],
+									"sexta" : [
+										
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Açucena",
+												"materia": "LES-200",
+												"cd_materia": "LES-200"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Paulo F.",
+												"materia": "JGT-001",
+												"cd_materia": "JGT-001"
+											}
+										
+									],
+									"sabado" : [
+										
+											{
+												"horario" : "08:00 - 11:30",
+												"professor": "L. Fernando",
+												"materia": "TJI-003",
+												"cd_materia": "TJI-003"
+											}
+										
+									]
+								}
+						},
+						{	
+							"legenda" : "4º Semestre",
+							"dias_semana" : 
+								{
+									"segunda" : [
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Pozo",
+												"materia": "AGS-004",
+												"cd_materia": "AGS-004"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Thames",
+												"materia": "JMT-001",
+												"cd_materia": "JMT-001"
+											}
+									],
+									"terca" : [
+										
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Jorge M.",
+												"materia": "JTL-001",
+												"cd_materia": "JTL-001"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Jorge M.",
+												"materia": "JTL-001",
+												"cd_materia": "JTL-001"
+											}
+										
+									],
+									"quarta" : [
+										
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Valéria",
+												"materia": "LIN-400",
+												"cd_materia": "LIN-400"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Henrique",
+												"materia": "PMG-001",
+												"cd_materia": "PMG-001"
+											}
+										
+									],
+									"quinta" : [
+										
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Daniel",
+												"materia": "ENP-001",
+												"cd_materia": "ENP-001"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Daniel",
+												"materia": "ENP-001",
+												"cd_materia": "ENP-001"
+											}
+										
+									],
+									"sexta" : [
+										
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Ricardo R.",
+												"materia": "EPQ-100",
+												"cd_materia": "EPQ-100"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Ricardo R.",
+												"materia": "EPQ-100",
+												"cd_materia": "EPQ-100"
+											}
+										
+									],
+									"sabado" : [
+										
+											{
+												"horario" : "08:00 - 11:30",
+												"professor": "Ricardo R.",
+												"materia": "TJI-004",
+												"cd_materia": "TJI-004"
+											}
+										
+									]
+								}
+						},
+						{	
+							"legenda" : "5º Semestre",
+							"dias_semana" : 
+								{
+									"segunda" : [
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Sueli",
+												"materia": "CEE-001",
+												"cd_materia": "CEE-001"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Bárbara",
+												"materia": "LIN-500",
+												"cd_materia": "LIN-500"
+											}
+									],
+									"terca" : [
+										
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Hamilton",
+												"materia": "TPJ-200",
+												"cd_materia": "TPJ-200"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Thames",
+												"materia": "JEU-001",
+												"cd_materia": "JEU-001"
+											}
+										
+									],
+									"quarta" : [
+										
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Alvaro",
+												"materia": "JMA-001",
+												"cd_materia": "JMA-001"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Alvaro",
+												"materia": "JMA-001",
+												"cd_materia": "JMA-001"
+											}
+										
+									],
+									"quinta" : [
+										
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Pozo",
+												"materia": "AGS-003",
+												"cd_materia": "AGS-003"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Pozo",
+												"materia": "AGS-003",
+												"cd_materia": "AGS-003"
+											}
+										
+									],
+									"sexta" : [
+										
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Mário",
+												"materia": "JSL-001",
+												"cd_materia": "JSL-001"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Mário",
+												"materia": "JSL-001",
+												"cd_materia": "JSL-001"
+											}
+										
+									],
+									"sabado" : [
+										
+											{
+												"horario" : "08:00 - 09:40",
+												"professor": "Sueli",
+												"materia": "TJI-005",
+												"cd_materia": "TJI-005"
+											},
+											{
+												"horario" : "09:50 - 13:20",
+												"professor": "Sueli",
+												"materia": "TJI-005",
+												"cd_materia": "TJI-005"
+											}
+										
+									]
+								}
+						},
+						{	
+							"legenda" : "6º Semestre",
+							"dias_semana" : 
+								{
+									"segunda" : [
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Gerson",
+												"materia": "ITI-100",
+												"cd_materia": "ITI-100"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Sueli",
+												"materia": "JTR-001",
+												"cd_materia": "JTR-001"
+											}
+									],
+									"terca" : [
+										
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Sueli",
+												"materia": "JTR-001",
+												"cd_materia": "JTR-001"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Júlio Cesar",
+												"materia": "ESR",
+												"cd_materia": "ESR"
+											}
+										
+									],
+									"quarta" : [
+										
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Julio Cesar",
+												"materia": "ETG-002",
+												"cd_materia": "ETG-002"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Julio Cesar",
+												"materia": "ETG-002",
+												"cd_materia": "ETG-002"
+											}
+										
+									],
+									"quinta" : [
+										
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Jorge M.",
+												"materia": "ACE-100",
+												"cd_materia": "ACE-100"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Jorge M.",
+												"materia": "ACE-100",
+												"cd_materia": "ACE-100"
+											}
+										
+									],
+									"sexta" : [
+										
+											{
+												"horario" : "15:00 - 16:40",
+												"professor": "Daniel",
+												"materia": "ETE-001",
+												"cd_materia": "ETE-001"
+											},
+											{
+												"horario" : "16:50 - 18:30",
+												"professor": "Eveline",
+												"materia": "LIN-600",
+												"cd_materia": "LIN-600"
+											}
+										
+									],
+									"sabado" : [
+										
+											{
+												"horario" : "08:00 - 11:30",
+												"professor": "Mário",
+												"materia": "TJI-006",
+												"cd_materia": "TJI-006"
 											}
 										
 									]
@@ -3769,8 +4079,420 @@
 				},
 				{
 					"nome" : "Logistica",
-					"periodo" : "Noite", 
+					"periodo" : "Noturno", 
 					"semestres" : [
+						{
+							"legenda" : "1º Semestre",
+							"dias_semana" : 
+								{
+									"segunda" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "Pozo",
+												"materia": "JLG-951",
+												"cd_materia": "JLG-951"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "Klim",
+												"materia": "TTG-100",
+												"cd_materia": "TTG-100"
+											}
+										
+									],
+									"terca" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "Vanina",
+												"materia": "LPO-001",
+												"cd_materia": "LPO-001"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "Vanina",
+												"materia": "LPO-001",
+												"cd_materia": "LPO-001"
+											}
+										
+									],
+									"quarta" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "Lourval",
+												"materia": "MCA-003",
+												"cd_materia": "MCA-003"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "Lourval",
+												"materia": "MCA-003",
+												"cd_materia": "MCA-003"
+											}
+										
+									],
+									"quinta" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "Nádia",
+												"materia": "INF-001",
+												"cd_materia": "INF-001"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "Valéria",
+												"materia": "LIN-100",
+												"cd_materia": "LIN-100"
+											}
+										
+									],
+									"sexta" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "Sueli",
+												"materia": "AAG-001",
+												"cd_materia": "AAG-001"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "Sueli",
+												"materia": "AAG-001",
+												"cd_materia": "AAG-001"
+											}
+										
+									],
+									"sabado" : [
+										
+											{
+												"horario" : "14:00 - 15:40",
+												"professor": "Sueli",
+												"materia": "TJI-001",
+												"cd_materia": "TJI-001"
+											},
+											{
+												"horario" : "15:50 - 17:30",
+												"professor": "Sueli",
+												"materia": "TJI-001",
+												"cd_materia": "TJI-001"
+											}
+										
+									]
+								}
+							
+						},
+						{
+							"legenda" : "2º Semestre",
+							"dias_semana" : 
+								{
+									"segunda" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "Thames",
+												"materia": "ETI-002",
+												"cd_materia": "ETI-002"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "Thames",
+												"materia": "ETI-002",
+												"cd_materia": "ETI-002"
+											}
+										
+									],
+									"terca" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "Edna",
+												"materia": "AGQ-001",
+												"cd_materia": "AGQ-001"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "Luciana",
+												"materia": "MCA-022",
+												"cd_materia": "MCA-022"
+											}
+										
+									],
+									"quarta" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "Klim",
+												"materia": "MMF-001",
+												"cd_materia": "MMF-001"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "Açucena",
+												"materia": "LES-100",
+												"cd_materia": "Les-100"
+											}
+										
+									],
+									"quinta" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "Walter",
+												"materia": "MET-102",
+												"cd_materia": "MET-102"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "Walter",
+												"materia": "MET-102",
+												"cd_materia": "MET-102"
+											}
+										
+									],
+									"sexta" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "Eveline",
+												"materia": "LIN-200",
+												"cd_materia": "LIN-200"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "Jamir",
+												"materia": "CCG-001",
+												"cd_materia": "CCG-001"
+											}
+										
+									],
+									"sabado" : [
+										
+											{
+												"horario" : "14:00 - 15:40",
+												"professor": "Edna",
+												"materia": "TJI-002",
+												"cd_materia": "TJI-002"
+											},
+											{
+												"horario" : "15:50 - 17:30",
+												"professor": "Edna",
+												"materia": "TJI-002",
+												"cd_materia": "TJI-002"
+											}
+										
+									]
+								}
+							
+						},
+						{
+							"legenda" : "3º Semestre",
+							"dias_semana" : 
+								{
+									"segunda" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "Simone D.",
+												"materia": "AGR-101",
+												"cd_materia": "AGR-101"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "Paulo F.",
+												"materia": "JGT-001",
+												"cd_materia": "JGT-001"
+											}
+										
+									],
+									"terca" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "Mario",
+												"materia": "AGP-300",
+												"cd_materia": "AGP-300"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "Mario",
+												"materia": "AGP-300",
+												"cd_materia": "AGP-300"
+											}
+										
+									],
+									"quarta" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "Açucena",
+												"materia": "LES-200",
+												"cd_materia": "LES-200"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "L. Fernando",
+												"materia": "CEF-003",
+												"cd_materia": "CEF-003"
+											}
+										
+									],
+									"quinta" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "Ruy",
+												"materia": "MPO-100",
+												"cd_materia": "MPO-100"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "Ruy",
+												"materia": "MPO-100",
+												"cd_materia": "MPO-100"
+											}
+										
+									],
+									"sexta" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "Valéria",
+												"materia": "LIN-300",
+												"cd_materia": "LIN-300"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "L. Fernando",
+												"materia": "CEF-003",
+												"cd_materia": "CEF-003"
+											}
+										
+									],
+									"sabado" : [
+										
+											{
+												"horario" : "14:00 - 15:40",
+												"professor": "Ruy",
+												"materia": "TJI-003",
+												"cd_materia": "TJI-003"
+											},
+											{
+												"horario" : "15:50 - 17:30",
+												"professor": "Ruy",
+												"materia": "TJI-003",
+												"cd_materia": "TJI-003"
+											}
+										
+									]
+								}
+							
+						},
+						{
+							"legenda" : "4º Semestre",
+							"dias_semana" : 
+								{
+									"segunda" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "Daniel",
+												"materia": "ENP-001",
+												"cd_materia": "ENP-001"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "Pozo",
+												"materia": "AGS-004",
+												"cd_materia": "AGS-004"
+											}
+										
+									],
+									"terca" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "L. Fernando",
+												"materia": "JTL-001",
+												"cd_materia": "JTL-001"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "Daniel",
+												"materia": "ELE-I",
+												"cd_materia": "ELE-I"
+											}
+										
+									],
+									"quarta" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "Henrique",
+												"materia": "PMG-001",
+												"cd_materia": "PMG-001"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "Valéria",
+												"materia": "LIN-400",
+												"cd_materia": "LIN-400"
+											}
+										
+									],
+									"quinta" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "L. Fernando",
+												"materia": "JTL-001",
+												"cd_materia": "JTL-001"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "Thames",
+												"materia": "JMT-001",
+												"cd_materia": "JMT-001"
+											}
+										
+									],
+									"sexta" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "Ricardo R.",
+												"materia": "EPQ-100",
+												"cd_materia": "EPQ-100"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "Ricardo R.",
+												"materia": "EPQ-100",
+												"cd_materia": "EPQ-100"
+											}
+										
+									],
+									"sabado" : [
+										
+											{
+												"horario" : "14:00 - 15:40",
+												"professor": "Ricardo R.",
+												"materia": "TJI-004",
+												"cd_materia": "TJI-004"
+											},
+											{
+												"horario" : "15:50 - 17:30",
+												"professor": "Ricardo R.",
+												"materia": "TJI-004",
+												"cd_materia": "TJI-004"
+											}
+										
+									]
+								}
+							
+						},
 						{
 							"legenda" : "5º Semestre",
 							"dias_semana" : 
@@ -3778,126 +4500,199 @@
 									"segunda" : [
 										
 											{
-												"horario" : "13:20 - 15:00",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"horario" : "19:00 - 20:40",
+												"professor": "Hamilton",
+												"materia": "TPJ-200",
+												"cd_materia": "TPJ-200"
 											},
 											{
-												"horario" : "15:00 - 16:40",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
-											},
-											{
-												"horario" : "16:50 - 18:30",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"horario" : "20:50 - 22:30",
+												"professor": "Sueli",
+												"materia": "CEE-001",
+												"cd_materia": "CEE-001"
 											}
 										
 									],
 									"terca" : [
 										
 											{
-												"horario" : "13:20 - 15:00",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"horario" : "19:00 - 20:40",
+												"professor": "Pozo",
+												"materia": "AGS-003",
+												"cd_materia": "AGS-003"
 											},
 											{
-												"horario" : "15:00 - 16:40",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
-											},
-											{
-												"horario" : "16:50 - 18:30",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"horario" : "20:50 - 22:30",
+												"professor": "Pozo",
+												"materia": "AGS-003",
+												"cd_materia": "AGS-003"
 											}
 										
 									],
 									"quarta" : [
 										
 											{
-												"horario" : "13:20 - 15:00",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"horario" : "19:00 - 20:40",
+												"professor": "Álvaro",
+												"materia": "JSL-001",
+												"cd_materia": "JSL-001"
 											},
 											{
-												"horario" : "15:00 - 16:40",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
-											},
-											{
-												"horario" : "16:50 - 18:30",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"horario" : "20:50 - 22:30",
+												"professor": "Álvaro",
+												"materia": "JSL-001",
+												"cd_materia": "JSL-001"
 											}
 										
 									],
 									"quinta" : [
 										
 											{
-												"horario" : "13:20 - 15:00",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"horario" : "19:00 - 20:40",
+												"professor": "Álvaro",
+												"materia": "JMA-001",
+												"cd_materia": "JMA-001"
 											},
 											{
-												"horario" : "15:00 - 16:40",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
-											},
-											{
-												"horario" : "16:50 - 18:30",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"horario" : "20:50 - 22:30",
+												"professor": "Álvaro",
+												"materia": "JMA-001",
+												"cd_materia": "JMA-001"
 											}
 										
 									],
 									"sexta" : [
 										
 											{
-												"horario" : "13:20 - 15:00",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"horario" : "19:00 - 20:40",
+												"professor": "Thames",
+												"materia": "JEU-001",
+												"cd_materia": "JEU-001"
 											},
 											{
-												"horario" : "15:00 - 16:40",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
-											},
-											{
-												"horario" : "16:50 - 18:30",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"horario" : "20:50 - 22:30",
+												"professor": "Valéria",
+												"materia": "LIN-500",
+												"cd_materia": "LIN-500"
 											}
 										
 									],
 									"sabado" : [
 										
 											{
-												"horario" : "08:00 - 11:30",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"horario" : "14:00 - 15:40",
+												"professor": "Thames",
+												"materia": "TJI-005",
+												"cd_materia": "TJI-005"
 											},
 											{
-												"horario" : "12:20 - 13:10",
-												"professor": "Fulano",
-												"materia": "Materia Tal",
-												"cd_materia": "IS00"
+												"horario" : "15:50 - 17:30",
+												"professor": "Thames",
+												"materia": "TJI-005",
+												"cd_materia": "TJI-005"
+											}
+										
+									]
+								}
+							
+						},
+						{
+							"legenda" : "6º Semestre",
+							"dias_semana" : 
+								{
+									"segunda" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "Gerson",
+												"materia": "ITI-100",
+												"cd_materia": "ITI-100"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "Júlio Cesar",
+												"materia": "ESR",
+												"cd_materia": "ESR"
+											}
+										
+									],
+									"terca" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "Daniel",
+												"materia": "ETE-001",
+												"cd_materia": "ETE-001"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "Sueli",
+												"materia": "JTR-001",
+												"cd_materia": "JTR-001"
+											}
+										
+									],
+									"quarta" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "Valéria",
+												"materia": "LIN-600",
+												"cd_materia": "LIN-600"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "Sueli",
+												"materia": "JTR-001",
+												"cd_materia": "JTR-001"
+											}
+										
+									],
+									"quinta" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "Julio Cesar",
+												"materia": "ETG-002",
+												"cd_materia": "ETG-002"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "Julio Cesar",
+												"materia": "ETG-002",
+												"cd_materia": "ETG-002"
+											}
+										
+									],
+									"sexta" : [
+										
+											{
+												"horario" : "19:00 - 20:40",
+												"professor": "Jorge M.",
+												"materia": "ACE-100",
+												"cd_materia": "ACE-100"
+											},
+											{
+												"horario" : "20:50 - 22:30",
+												"professor": "Jorge M.",
+												"materia": "ACE-100",
+												"cd_materia": "ACE-100"
+											}
+										
+									],
+									"sabado" : [
+										
+											{
+												"horario" : "14:00 - 15:40",
+												"professor": "Mário",
+												"materia": "TJI-006",
+												"cd_materia": "TJI-006"
+											},
+											{
+												"horario" : "15:50 - 17:30",
+												"professor": "Mário",
+												"materia": "TJI-006",
+												"cd_materia": "TJI-006"
 											}
 										
 									]

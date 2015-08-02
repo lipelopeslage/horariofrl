@@ -18,6 +18,7 @@ body
 	none()
 	background-color #f0f0f0
 	overflow-x hidden
+	padding-bottom 50px
 	
 	main
 		padding 0 !important	
@@ -34,7 +35,7 @@ body
 			block-absolute()
 			dimensions(129px, 80px, url(../img/fatec.jpg))
 			right 10px
-			top 14px
+			top 17px
 			content ""
 	.vardump
 		block-relative()
@@ -104,18 +105,25 @@ body
 			&:before
 				block-absolute()
 				dimensions(100%, 50px, #f0f0f0)
-				opacity .2
+				opacity .8
 				
 				z-index 9
 
 				content ""
-		li:hover a
-			background-color transparent !important
+		li
 			border 0 !important
+				
+		li, li.active
+			&:hover a
+				background-color transparent !important
+				border 0 !important
+				padding 10px 16px !important
+				line-height 26px !important
 		li.active
-			border 0 !important
 			a
 				border 0 !important
+				padding 10px 16px !important
+				line-height 26px !important
 				color white
 				&:active, &:hover, &:hover
 					color white

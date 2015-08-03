@@ -3,8 +3,8 @@
 	root.myApp = {
 		init : function(){
 			var _this = this, url, previousConnectionState = "";
-			_this.localJSONURL = "app/res/horarios.json";//"https://api.myjson.com/bins/2rrhz";
-			_this.onlineJSONURL = "http://www.lipelopeslage.com.br/fatec/horarios.json";
+			_this.localJSONURL = "app/res/horarios.min.json";//"https://api.myjson.com/bins/2rrhz";
+			_this.onlineJSONURL = "http://www.lipelopeslage.com.br/fatec/horarios.min.json";
 
 			_this.textUnfav = "Deseja remover este curso, ciclo e semestre como favorito?";
 			_this.textFav = "Deseja adicionar este curso, ciclo e semestre como favorito?<br>Caso escolha, este abrirá automaticamente na próxima vez que iniciar o aplicativo";

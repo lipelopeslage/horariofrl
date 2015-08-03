@@ -153,6 +153,19 @@ body .nav-tabs li.active a[href="#gp"] {
 body .nav-tabs li.active a[href="#lo"] {
   background-color: #6e5494 !important;
 }
+body tbody tr td bdi {
+  font-size: 14px;
+  font-weight: bold;
+}
+body tbody tr td strong {
+  font-size: 17px;
+  font-weight: normal;
+}
+body tbody tr td i {
+  color: #888;
+  font-size: 14px;
+  font-weight: bold;
+}
 body .panel.panel-default {
   margin-bottom: 6px;
 }

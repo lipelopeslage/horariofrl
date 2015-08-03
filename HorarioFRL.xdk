@@ -5,7 +5,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "https://appcenter.html5tools-software.intel.com/api/v2.0/redirect/projectrenderers/release-2015-ww25/jsapp/templates-blank-cordova-project/sample.zip",
       "projectGuid": "70fb21d8-0537-413d-9c6d-34651c045408",
-      "lastModifiedDate": 1438477591875,
+      "lastModifiedDate": 1438626730905,
       "creationDate": 1435870149443
     },
     "XDK-app-designer": "false",
@@ -99,13 +99,13 @@
           "android-minSdkVersion": "8",
           "android-targetSdkVersion": "10",
           "android-installLocation": "auto",
-          "android-signed": true,
+          "android-signed": false,
           "Orientation": "default",
           "Fullscreen": true
         },
         "isActive_": true,
         "appName_": "Horários - FRL",
-        "appID_": "br.com.lipelopeslage.horariosfrl",
+        "appID_": "br.com.lipelopeslage.horariosfatecrl",
         "appAccess_": [
           {
             "origin": "*"
@@ -200,10 +200,10 @@
         "iosProvs_": [],
         "cordovaCLIVersion_": "4.1.2",
         "crosswalkVersion_": "11",
-        "appVersion_": "0.0.3",
+        "appVersion_": "1.8.2",
         "appDescription_": "Guia prático para os alunos da Fatec Rubens Lara (Santos) acompanharem os horários das aulas.",
         "appAuthor_": "Felipe Lopes Lage",
-        "appVersionCode_": "1"
+        "appVersionCode_": "6"
       },
       "iOS": {
         "platform_": "ios",

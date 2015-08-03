@@ -124,7 +124,7 @@
 			function horarios(text, dias_semana){
 				var html = "<table class='table'><thead><tr><th>"+text+"</th></tr></thead><tbody>";
 				for(dia in dias_semana){
-					html += "<tr><td>"+dias_semana[dia].horario+" : "+dias_semana[dia].materia+" ("+dias_semana[dia].professor+")</td></tr>";
+					html += "<tr><td><bdi>"+dias_semana[dia].horario+" </bdi>  <strong>"+dias_semana[dia].professor+"</strong> <i> "+dias_semana[dia].materia+"</i></td></tr>";
 				}
 				html += "</tbody></table>";
 				return html;

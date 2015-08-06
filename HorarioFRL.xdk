@@ -5,7 +5,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "https://appcenter.html5tools-software.intel.com/api/v2.0/redirect/projectrenderers/release-2015-ww25/jsapp/templates-blank-cordova-project/sample.zip",
       "projectGuid": "70fb21d8-0537-413d-9c6d-34651c045408",
-      "lastModifiedDate": 1438734028080,
+      "lastModifiedDate": 1438792733550,
       "creationDate": 1435870149443
     },
     "XDK-app-designer": "false",
@@ -239,27 +239,52 @@
         "runtime_": "Cordova 3.x",
         "name_": "Windows8",
         "preferences_": {
-          "windows-publisher-display-name": "",
-          "windows-publisher-id": ""
+          "windows-publisher-display-name": "Felipe Lopes Lage",
+          "windows-publisher-id": "52045C96-F8D6-40CA-A1C5-05CB6A9086E4",
+          "Fullscreen": true,
+          "Orientation": "default"
         },
-        "isActive_": false,
-        "appName_": "HorarioFRL",
-        "appID_": "xdk.intel.blank.template",
+        "isActive_": true,
+        "appName_": "Horários - Fatec Rubens Lara",
+        "appID_": "54305FelipeLopesLage.Horrios-FatecRubensLara",
         "appAccess_": [
           {
             "origin": "*"
           }
         ],
-        "icons_": [],
-        "splashes_": [],
+        "icons_": [
+          {
+            "relPath": "app/icons/windows_phone_icon_30x30.png",
+            "height": 30,
+            "width": 30
+          },
+          {
+            "relPath": "app/icons/windows_phone_icon_50x50.png",
+            "height": 50,
+            "width": 50
+          },
+          {
+            "relPath": "app/icons/windows_phone_icon_150x150.png",
+            "height": 150,
+            "width": 150
+          }
+        ],
+        "splashes_": [
+          {
+            "relPath": "app/splashs/windows_phone_splashscreen.png",
+            "height": 300,
+            "width": 620,
+            "orientation": "landscape"
+          }
+        ],
         "addlPermissions_": "",
         "excludedLibraries_": "",
         "iosProvs_": [],
         "cordovaCLIVersion_": "4.1.2",
         "crosswalkVersion_": "11",
         "appVersion_": "0.0.0.1",
-        "appAuthor_": "Intel XDK",
-        "appDescription_": "Universal init code for Intel XDK and Cordova device ready detection."
+        "appAuthor_": "Felipe Lopes Lage",
+        "appDescription_": "Guia prático para os alunos da Fatec Rubens Lara (Santos) acompanharem os horários das aulas."
       },
       "WebApp": {
         "platform_": "webapp",

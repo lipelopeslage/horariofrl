@@ -19,6 +19,8 @@
 				_this.doOfflineThing();
 			}*/
 
+			//alert("init")
+
 			_this.doOfflineThing();
 
 			_this.view.init();
@@ -35,7 +37,7 @@
 					_this.json = json;	
 					_this.view.fillCredits();
 				}).fail(function(){
-					alert("Erro buscando arquivo. Contate o administrador.")
+					alert("Erro buscando arquivo. Contate o autor do app.")
 				});	
 			}else{
 				//alert('useCache')
@@ -48,14 +50,19 @@
 		doOfflineThing : function(){
 			var _this = this, url = this.localJSONURL;
 			if(!this.hasCache()){
-				$.get(url, function(json){
-					localStorage.setItem("json", JSON.stringify(json));
+				//alert("nao tem cache, carregando json")
+				$.get(url+"?t="+Date.now(), function(json){
+				//	alert("json carregado")
 					_this.json = JSON.parse(json); // o json local precisa ser parseado
+					localStorage.setItem("json", JSON.stringify(_this.json));
+					//alert(">>> \n"+JSON.parse(localStorage.json).creditos)
 					_this.view.fillCredits();
+
 				}).fail(function(e){
 					alert('Erro buscando arquivo. Contate o administrador.');
 				});
 			}else{
+				//alert("tem cache")
 				_this.useCache();
 				_this.view.fillCredits();
 			}
@@ -88,7 +95,11 @@
 			});
 		},
 		useCache : function(){
-			this.json = JSON.parse(localStorage.json);
+			this.json = (localStorage && localStorage.json) ? JSON.parse(localStorage.json) : null;
+			//alert("1: "+this.json.versionID);
+			//alert("2: "+this.json.creditos);
+			//alert("3: \n"+this.json);
+
 			//console.log("ja tem no local storage");
 		},
 		hasCache : function(){

@@ -9,10 +9,14 @@
 			$("body").fadeIn(100);
 			$("main").css("min-height", (win.height() - 150)+"px");
 
+
+			//alert("view init 1")
 			this.bind();
 			if(root.favorito) {
+			//	alert("tem favorito")
 				_this.openFavorite(); 
 			}else {
+			//	alert("nao tem favorito")
 				setTimeout(function(){
 					$(".nav-tabs li:eq(0) a").trigger("click");
 				}, 300);
@@ -28,6 +32,7 @@
 						h2.removeClass('fixed').parent().css('padding-top','0px');
 				}
 			});
+			//alert("view init 2")
 		},
 		reset : function(){
 			var _this = this;
@@ -43,6 +48,7 @@
 			}, 300);
 		},
 		bind : function (){
+			//alert("bind view")
 			var _this = this;
 			$(".nav-tabs").removeClass("blocked").find("li a").click(function(){
 				var curso = $(this).attr("aria-controls");
@@ -133,6 +139,7 @@
 		}, 
 		fillCredits : function(){
 			var creditos = myApp.json.creditos, htmls = "", credito, nome, link;
+			//alert("preenche creditos")
 			for(i in creditos){
 				item = creditos[i];
 				nome = item.nome;

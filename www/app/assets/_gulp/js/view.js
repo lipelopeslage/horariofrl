@@ -3,25 +3,22 @@
 		init : function(){
 			var _this = this, win = $(window), h2Top;
 			_this.modal = $("#modal-fav");
-			_this.modalBtn = _this.modal.find("button.btn-primary");
-			_this.modalBtn.click(function(){return _this.modalAction();});
+			_this.modalFavBtn = _this.modal.find("button.btn-primary");
+			_this.modalFavBtn.click(function(){
+				if($(this).hasClass("update"))
+					_this.modalActionUpdate();
+				else
+					 _this.modalAction();
+			});
+
 			
 			$("body").fadeIn(100);
 			$("main").css("min-height", (win.height() - 150)+"px");
 
 
 			//alert("view init 1")
-			this.bind();
-			if(root.favorito) {
-			//	alert("tem favorito")
-				_this.openFavorite(); 
-			}else {
-			//	alert("nao tem favorito")
-				setTimeout(function(){
-					$(".nav-tabs li:eq(0) a").trigger("click");
-				}, 300);
-			}
-
+			//this.bind();
+			
 			win.scroll(function(){
 				var top = win.scrollTop(), h2 = $(".tab-pane.active h2"), h2Top = h2.parent().offset().top;
 				if(top > h2Top){
@@ -36,10 +33,7 @@
 		},
 		reset : function(){
 			var _this = this;
-			$(".nav-tabs").removeClass("blocked").find("li a").each(function(){
-				var curso = $(this).attr("aria-controls");
-				_this.loadTemplate(curso, true);
-			});	
+			_this.bind(true);
 			setTimeout(function(){
 				$(".tab-pane.active h2").removeClass('fixed').parent().css('padding-top', '0px');
 				if(root.favorito){			
@@ -47,13 +41,41 @@
 				}
 			}, 300);
 		},
-		bind : function (){
+		buildMenu : function(){
+			var navTabs = $(".nav-tabs"), lists = $(".tab-content.listagens"),cursos = myApp.json.cursos, nav = "", list = "";
+
+			for(var i in cursos){
+				nav += '<li role="presentation"><a href="#'+i+'" aria-controls="'+i+'" role="tab" data-toggle="tab">'+i.toUpperCase()+'</a></li>';
+				list += '<div role="tabpanel" class="tab-pane '+( (i == 'si' ? 'active' : '') )+'" id="'+i+'"></div>';
+			}
+
+			navTabs.html(nav);
+			lists.html(list);
+
+
+			return this;
+		},
+		bind : function (reset){
 			//alert("bind view")
-			var _this = this;
-			$(".nav-tabs").removeClass("blocked").find("li a").click(function(){
+			var _this = this, navTabs = $(".nav-tabs");
+
+			navTabs.removeClass("blocked").find("li a").click(function(){
 				var curso = $(this).attr("aria-controls");
-				_this.loadTemplate(curso);
-			});			
+				_this.loadTemplate(curso, (reset == true));
+			});	
+
+			reset = false;
+
+			if(myApp.favorito && myApp.json) {
+			//	alert("tem favorito")
+				this.openFavorite(); 
+			}else {
+			//	alert("nao tem favorito")
+				setTimeout(function(){
+					$(".nav-tabs li:eq(0) a").trigger("click");
+				}, 300);
+			}
+			return this;		
 		},
 		loadTemplate : function(id, reset){
 			var _this = this, periodosCurso = myApp.json.cursos[id], semestres = [], dias_semana = [],
@@ -62,7 +84,7 @@
 			htmlTemplate = $("body .tab-content .tab-pane#"+id);
 			if(reset){
 				htmlTemplate.html("");
-				this.loadTemplate(id);
+				this.loadTemplate(id, false);
 			}
 			if(htmlTemplate.html().trim() != "") return;
 			
@@ -107,7 +129,7 @@
 		},
 		fillPanel : function(panel, semestre, nomeCurso, periodo, count){
 			var title = panel.find(".panel-title a"), body = panel.find(".panel-body"),
-				dias_semana = semestre.dias_semana, html = "", index = String(nomeCurso+periodo+semestre.legenda).replace(/,| |º/g,"");//String("_"+count);
+				dias_semana = semestre.dias_semana, html = "", index = String(nomeCurso+periodo+semestre.legenda).replace(/,| |º|\(|\)/g,"");//String("_"+count);
 			
 			if(count == 0){
 				//title.attr("aria-expanded", "true");	
@@ -150,12 +172,19 @@
 			$("footer").html(htmls);
 		},
 		openFavorite : function(){
-			var _this = this, fav = root.favorito, curso = fav.curso, semestre = fav.semestre;
+			var _this = this, fav = root.favorito, curso = fav.curso, semestre = fav.semestre,
+				favTab = $(".nav.nav-tabs li a[aria-controls="+curso+"]");
 			$(".panel-collapse").css("transition", "none");
-			$(".nav.nav-tabs li a[aria-controls="+curso+"]").trigger("click");
+			
+			if(favTab.length) // se o favorito ainda existir no horário
+				favTab.trigger("click"); // abre o favorito
+			else
+				$(".nav-tabs li:eq(0) a").trigger("click"); // caso contrário, comportamento default
 
 			function scrollToFavorite(){
 				var semestreBtn = $("#"+root.favorito.semestre);
+
+				if(!semestreBtn.length) return; // caso não haja mais o horário em questão, não faz nada
 				$("html,body").animate({"scrollTop":(semestreBtn.offset().top-$(".tab-pane.active h2").outerHeight())+"px"}, function(){
 					$(".panel-collapse").css("transition", "all .4s ease-in-out");
 				})
@@ -171,7 +200,7 @@
 			var modal = this.modal, curso = modal.attr('data-curso'), semestre = modal.attr('data-semestre'), 
 				unfav = modal.attr('data-unfav') == 'true', semestreBtn = $("#"+semestre).find("a"),
 				semestreBtnOld, favIcon = semestreBtn.parent().siblings('.fav');			
-
+			
 			$(".tab-content .fav").removeClass('selected');
 
 			if(unfav){
@@ -186,8 +215,16 @@
 			
 			modal.modal('hide');
 		},
+		modalActionUpdate: function(){
+			this.modal.modal('hide');
+			this.buildMenu().reset();
+		},
 		changeFavModal : function(text){
-			this.modal.find(".modal-body .text-center").html(text);
+			this.modal.find(".modal-body .text-center").html(text).parent().siblings(".modal-footer").children(".btn.btn-primary").removeClass("update");
+		},
+		updateModal : function(text){
+			this.modal.find(".modal-body .text-center").html(text).parent().siblings(".modal-footer").children(".btn.btn-primary").addClass("update");
+			this.modal.modal();
 		}
 	}
 })(window.myApp, jQuery)

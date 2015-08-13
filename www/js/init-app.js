@@ -26,7 +26,7 @@ app.LOG = app.LOG || false ;
 app.consoleLog = function() {           // only emits console.log messages if app.LOG != false
     if( app.LOG ) {
         var args = Array.prototype.slice.call(arguments, 0) ;
-        console.log.apply(console, args) ;
+        //console.log.apply(console, args) ;
     }
 } ;
 
@@ -42,7 +42,7 @@ app.initEvents = function() {
     "use strict" ;
     app.hideSplashScreen() ;    // after init is good time to remove splash screen; using a splash screen is optional
 
-    console.log(app)
+    //console.log(app)
 } ;
 document.addEventListener("app.Ready", app.initEvents, false) ;
 

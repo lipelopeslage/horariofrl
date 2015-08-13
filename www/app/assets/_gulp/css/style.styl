@@ -73,19 +73,19 @@ body
 				z-index 9
 				
 				
-		&#si
+		&#si,&#ads-ead
 			h2
 				background-color #0396d8
-		&#ads
+		&#ads,&#ads-ead
 			h2
 				background-color #1668b9
-		&#ge
+		&#ge,&#ge-ead
 			h2
 				background-color #4ea26a
-		&#gp
+		&#gp,&#gp-ead
 			h2
 				background-color #429a8a
-		&#lo
+		&#lo,&#log-ead
 			h2
 				background-color #6e5494
 
@@ -105,37 +105,39 @@ body
 			&:before
 				block-absolute()
 				dimensions(100%, 50px, #f0f0f0)
-				opacity .8
-				
+				opacity .8				
 				z-index 9
-
 				content ""
 		li
 			border 0 !important
+			a
+				border 0 !important
+				padding 10px 10px !important
+				line-height 26px !important
 				
 		li, li.active
 			&:hover a
 				background-color transparent !important
 				border 0 !important
-				padding 10px 16px !important
+				padding 10px 10px !important
 				line-height 26px !important
 		li.active
 			a
 				border 0 !important
-				padding 10px 16px !important
+				padding 10px 10px !important
 				line-height 26px !important
 				color white
 				&:active, &:hover, &:hover
 					color white
-				&[href="#ads"]
+				&[href="#ads"],&[href="#ads-ead"]
 					background-color #1668b9 !important
-				&[href="#si"]
+				&[href="#si"],&[href="#si-ead"]
 					background-color #0396d8 !important
-				&[href="#ge"]
+				&[href="#ge"],&[href="#ge-ead"]
 					background-color #4ea26a !important
-				&[href="#gp"]
+				&[href="#gp"],&[href="#gp-ead"]
 					background-color #429a8a !important
-				&[href="#lo"]
+				&[href="#lo"],&[href="#lo-ead"]
 					background-color #6e5494 !important
 	
 	tbody
@@ -171,3 +173,8 @@ body
 			&.selected
 				background-color #FD9E9C
 				
+.modal#modal-fav
+	.modal-footer
+		button.update
+			background-color #009A56 !important
+			border-color #008148 !important

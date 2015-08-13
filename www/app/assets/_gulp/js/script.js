@@ -3,21 +3,28 @@
 	root.myApp = {
 		init : function(){
 			var _this = this, url, previousConnectionState = "";
+
+			_this.useCache();
 			_this.localJSONURL = "app/res/horarios.min.json";//"https://api.myjson.com/bins/2rrhz";
-			_this.onlineJSONURL = "http://www.lipelopeslage.com.br/fatec/horarios.min.json";
+			_this.onlineJSONURL = (_this.json && _this.json.utils) ? _this.json.utils.jsonURL : "http://www.lipelopeslage.com.br/fatec/horarios.min.json";
 
 			_this.textUnfav = "Deseja remover este curso, ciclo e semestre como favorito?";
 			_this.textFav = "Deseja adicionar este curso, ciclo e semestre como favorito?<br>Caso escolha, este abrirá automaticamente na próxima vez que iniciar o aplicativo";
- 
+			_this.textUpdate = "Houve mudanças nos horários, confirme para atualizar as listagens agora, ou cancele para atualizá-las na próxima vez que entrar neste aplicativo."
+ 			//localStorage.removeItem("json");
 			//url = (window.navigator.onLine) ? _this.onlineJSONURL : _this.localJSONURL;
 			_this.favorito = (localStorage && localStorage.favorito) ? JSON.parse(localStorage.favorito) : null;
 			
 			
-			/*if(navigator.connection.type != "Connection.UNKNOWN" || navigator.connection.type != "Connection.NONE"){ // se tiver conexão, verifica cache e equipara com json local
-				_this.doOnlineThing();
-			}else{ // se não tiver conexão, verifica cache e então carrega json local, caso não haja cache
+			if(navigator.connection.type == "unknown" || navigator.connection.type == "none"){ 
+				// se não tiver conexão, verifica cache e então carrega json local, caso não haja cache
 				_this.doOfflineThing();
-			}*/
+			}else{ 
+				// se tiver conexão, verifica cache e equipara com json local
+				_this.doOnlineThing();
+			}
+
+			document.addEventListener("online", _this.doOnlineThing, false);
 
 			//alert("init")
 
@@ -32,13 +39,7 @@
 		doOnlineThing : function(){
 			var _this = this, url = this.onlineJSONURL;
 			if(!this.hasCache()){
-				$.get(url, function(json){
-					localStorage.setItem("json", JSON.stringify(json));
-					_this.json = json;	
-					_this.view.fillCredits();
-				}).fail(function(){
-					alert("Erro buscando arquivo. Contate o autor do app.")
-				});	
+				_this.doOfflineThing();
 			}else{
 				//alert('useCache')
 				this.useCache();
@@ -53,46 +54,62 @@
 				//alert("nao tem cache, carregando json")
 				$.get(url+"?t="+Date.now(), function(json){
 				//	alert("json carregado")
-					_this.json = JSON.parse(json); // o json local precisa ser parseado
+					_this.json = JSON.parse(json); // o json local precisa ser parseado quando estiver rodando no device
 					localStorage.setItem("json", JSON.stringify(_this.json));
-					//alert(">>> \n"+JSON.parse(localStorage.json).creditos)
+					_this.view.buildMenu().bind();
 					_this.view.fillCredits();
 
 				}).fail(function(e){
-					alert('Erro buscando arquivo. Contate o administrador.');
+					alert('Erro buscando arquivo local. Contate o autor.');
 				});
 			}else{
 				//alert("tem cache")
 				_this.useCache();
+				_this.view.buildMenu().bind();
 				_this.view.fillCredits();
 			}
 		},
 		checkVersions : function(){
-			var _this = this, url = this.onlineJSONURL, localJSON = JSON.parse(localStorage.json), timeout = 2000;
+			var _this = this, url = this.onlineJSONURL, localJSON = JSON.parse(localStorage.json), 
+				timeout = 2000, waitingTimeout;
+
 			_this.showWarning("Buscando atualizações...", "success", "search-update");
+
 			$.get(url+"?t="+Date.now(), function(newJSON){
+				clearTimeout(waitingTimeout); // limpa tempo de espera
+				
 				_this.hideWarning("search-update");
 				
 				if(localJSON.versionID == newJSON.versionID){
 					_this.showWarning("Sua versão já está atualizada =)", "success", "search-update");
 					_this.json = localJSON;
 				}else{
-					timeout = 5000;
-					_this.showWarning("Houve mudanças nos horários, não se preocupe, seu aplicativo já está atualizado =)", "success", "search-update");
+					//timeout = 5000;
+					//_this.showWarning("Houve mudanças nos horários, não se preocupe, seu aplicativo já está atualizado =)", "success", "search-update");
 					_this.json = newJSON;
 					localStorage.setItem("json", JSON.stringify(newJSON));
-					_this.view.reset();
+					_this.view.updateModal(_this.textUpdate);
 				}
 				_this.view.fillCredits();
 				setTimeout(function(){
 					_this.hideWarning("search-update");
 				}, timeout);
+
 			}).fail(function(){
-				_this.showWarning("Erro na conexão, tente novamente mais tarde", "danger", "search-update");
+				clearTimeout(waitingTimeout); // limpa tempo de espera
+				_this.showWarning("Erro de conexão, tente novamente mais tarde", "danger", "search-update");
 				setTimeout(function(){
 					_this.hideWarning("search-update");
 				},5000);
 			});
+
+			// EM CASO DE MUITA ESPERA, JOGAR ERRO
+			waitingTimeout = setTimeout(function(){
+				_this.showWarning("Erro de conexão, tente novamente mais tarde", "danger", "search-update");
+				setTimeout(function(){
+					_this.hideWarning("search-update");
+				},5000);
+			}, 6000 * 5); // 5 min. de espera
 		},
 		useCache : function(){
 			this.json = (localStorage && localStorage.json) ? JSON.parse(localStorage.json) : null;

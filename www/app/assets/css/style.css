@@ -79,19 +79,24 @@ body .tab-pane h2.fixed {
   top: 0;
   z-index: 9;
 }
-body .tab-pane#si h2 {
+body .tab-pane#si h2,
+body .tab-pane#ads-ead h2 {
   background-color: #0396d8;
 }
-body .tab-pane#ads h2 {
+body .tab-pane#ads h2,
+body .tab-pane#ads-ead h2 {
   background-color: #1668b9;
 }
-body .tab-pane#ge h2 {
+body .tab-pane#ge h2,
+body .tab-pane#ge-ead h2 {
   background-color: #4ea26a;
 }
-body .tab-pane#gp h2 {
+body .tab-pane#gp h2,
+body .tab-pane#gp-ead h2 {
   background-color: #429a8a;
 }
-body .tab-pane#lo h2 {
+body .tab-pane#lo h2,
+body .tab-pane#log-ead h2 {
   background-color: #6e5494;
 }
 body footer {
@@ -121,16 +126,21 @@ body .nav-tabs.blocked:before {
 body .nav-tabs li {
   border: 0 !important;
 }
+body .nav-tabs li a {
+  border: 0 !important;
+  padding: 10px 10px !important;
+  line-height: 26px !important;
+}
 body .nav-tabs li:hover a,
 body .nav-tabs li.active:hover a {
   background-color: transparent !important;
   border: 0 !important;
-  padding: 10px 16px !important;
+  padding: 10px 10px !important;
   line-height: 26px !important;
 }
 body .nav-tabs li.active a {
   border: 0 !important;
-  padding: 10px 16px !important;
+  padding: 10px 10px !important;
   line-height: 26px !important;
   color: #fff;
 }
@@ -138,19 +148,24 @@ body .nav-tabs li.active a:active,
 body .nav-tabs li.active a:hover {
   color: #fff;
 }
-body .nav-tabs li.active a[href="#ads"] {
+body .nav-tabs li.active a[href="#ads"],
+body .nav-tabs li.active a[href="#ads-ead"] {
   background-color: #1668b9 !important;
 }
-body .nav-tabs li.active a[href="#si"] {
+body .nav-tabs li.active a[href="#si"],
+body .nav-tabs li.active a[href="#si-ead"] {
   background-color: #0396d8 !important;
 }
-body .nav-tabs li.active a[href="#ge"] {
+body .nav-tabs li.active a[href="#ge"],
+body .nav-tabs li.active a[href="#ge-ead"] {
   background-color: #4ea26a !important;
 }
-body .nav-tabs li.active a[href="#gp"] {
+body .nav-tabs li.active a[href="#gp"],
+body .nav-tabs li.active a[href="#gp-ead"] {
   background-color: #429a8a !important;
 }
-body .nav-tabs li.active a[href="#lo"] {
+body .nav-tabs li.active a[href="#lo"],
+body .nav-tabs li.active a[href="#lo-ead"] {
   background-color: #6e5494 !important;
 }
 body tbody tr td bdi {
@@ -188,4 +203,8 @@ body .panel-heading .fav span {
 }
 body .panel-heading .fav.selected {
   background-color: #fd9e9c;
+}
+.modal#modal-fav .modal-footer button.update {
+  background-color: #009a56 !important;
+  border-color: #008148 !important;
 }

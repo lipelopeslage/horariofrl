@@ -5,7 +5,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "https://appcenter.html5tools-software.intel.com/api/v2.0/redirect/projectrenderers/release-2015-ww25/jsapp/templates-blank-cordova-project/sample.zip",
       "projectGuid": "70fb21d8-0537-413d-9c6d-34651c045408",
-      "lastModifiedDate": 1439267353430,
+      "lastModifiedDate": 1439497679452,
       "creationDate": 1435870149443
     },
     "XDK-app-designer": "false",
@@ -200,7 +200,7 @@
         "iosProvs_": [],
         "cordovaCLIVersion_": "4.1.2",
         "crosswalkVersion_": "11",
-        "appVersion_": "2.0",
+        "appVersion_": "2.1",
         "appDescription_": "Guia prático para os alunos da Fatec Rubens Lara (Santos) acompanharem os horários das aulas.",
         "appAuthor_": "Felipe Lopes Lage",
         "appVersionCode_": "9"

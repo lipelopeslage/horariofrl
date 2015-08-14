@@ -49,16 +49,18 @@ body .refresh {
 }
 body .refresh .btn {
   position: relative !important;
+  height: 30px;
   padding-left: 20px;
 }
 body .refresh .btn:before {
   display: block;
   position: absolute;
   width: 25px;
-  height: 28px;
-  background: url("../img/refresh-icon.png");
-  top: -2px;
+  height: 100%;
+  background: url("../img/refresh-icon.png") no-repeat center;
+  top: 0;
   left: 2px;
+  background-size: contain;
   content: "";
 }
 body .refresh .btn:hover,
@@ -80,23 +82,28 @@ body .tab-pane h2.fixed {
   z-index: 9;
 }
 body .tab-pane#si h2,
-body .tab-pane#ads-ead h2 {
+body .tab-pane#si-ead h2,
+body .tab-pane#ead-si h2 {
   background-color: #0396d8;
 }
 body .tab-pane#ads h2,
-body .tab-pane#ads-ead h2 {
+body .tab-pane#ads-ead h2,
+body .tab-pane#ead-ads h2 {
   background-color: #1668b9;
 }
 body .tab-pane#ge h2,
-body .tab-pane#ge-ead h2 {
+body .tab-pane#ge-ead h2,
+body .tab-pane#ead-ge h2 {
   background-color: #4ea26a;
 }
 body .tab-pane#gp h2,
-body .tab-pane#gp-ead h2 {
+body .tab-pane#gp-ead h2,
+body .tab-pane#ead-gp h2 {
   background-color: #429a8a;
 }
 body .tab-pane#lo h2,
-body .tab-pane#log-ead h2 {
+body .tab-pane#lo-ead h2,
+body .tab-pane#ead-lo h2 {
   background-color: #6e5494;
 }
 body footer {
@@ -105,6 +112,8 @@ body footer {
 body .panel-title a {
   display: block !important;
   width: 100%;
+  line-height: 20px;
+  padding-right: 35px;
 }
 body .panel-title a:hover {
   text-decoration: none;
@@ -149,23 +158,28 @@ body .nav-tabs li.active a:hover {
   color: #fff;
 }
 body .nav-tabs li.active a[href="#ads"],
-body .nav-tabs li.active a[href="#ads-ead"] {
+body .nav-tabs li.active a[href="#ads-ead"],
+body .nav-tabs li.active a[href="#ead-ads"] {
   background-color: #1668b9 !important;
 }
 body .nav-tabs li.active a[href="#si"],
-body .nav-tabs li.active a[href="#si-ead"] {
+body .nav-tabs li.active a[href="#si-ead"],
+body .nav-tabs li.active a[href="#ead-si"] {
   background-color: #0396d8 !important;
 }
 body .nav-tabs li.active a[href="#ge"],
-body .nav-tabs li.active a[href="#ge-ead"] {
+body .nav-tabs li.active a[href="#ge-ead"],
+body .nav-tabs li.active a[href="#ead-ge"] {
   background-color: #4ea26a !important;
 }
 body .nav-tabs li.active a[href="#gp"],
-body .nav-tabs li.active a[href="#gp-ead"] {
+body .nav-tabs li.active a[href="#gp-ead"],
+body .nav-tabs li.active a[href="#ead-gp"] {
   background-color: #429a8a !important;
 }
 body .nav-tabs li.active a[href="#lo"],
-body .nav-tabs li.active a[href="#lo-ead"] {
+body .nav-tabs li.active a[href="#lo-ead"],
+body .nav-tabs li.active a[href="#ead-lo"] {
   background-color: #6e5494 !important;
 }
 body tbody tr td bdi {

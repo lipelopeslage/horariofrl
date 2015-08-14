@@ -46,12 +46,14 @@ body
 		margin-bottom 20px
 		.btn
 			position relative !important
+			height 30px
 			padding-left 20px				
 			&:before
 				block-absolute()
-				dimensions(25px, 28px, url(../img/refresh-icon.png))
-				top -2px
+				dimensions(25px, 100%, url(../img/refresh-icon.png) no-repeat center)
+				top 0
 				left 2px
+				background-size contain
 				content ""
 			&:hover, &:focus
 				background-color white !important
@@ -73,19 +75,19 @@ body
 				z-index 9
 				
 				
-		&#si,&#ads-ead
+		&#si,&#si-ead,&#ead-si
 			h2
 				background-color #0396d8
-		&#ads,&#ads-ead
+		&#ads,&#ads-ead,&#ead-ads
 			h2
 				background-color #1668b9
-		&#ge,&#ge-ead
+		&#ge,&#ge-ead,&#ead-ge
 			h2
 				background-color #4ea26a
-		&#gp,&#gp-ead
+		&#gp,&#gp-ead,&#ead-gp
 			h2
 				background-color #429a8a
-		&#lo,&#log-ead
+		&#lo,&#lo-ead,&#ead-lo
 			h2
 				background-color #6e5494
 
@@ -95,6 +97,8 @@ body
 	.panel-title a
 		display block !important
 		width 100%
+		line-height 20px
+		padding-right 35px
 		&:hover
 			text-decoration none
 
@@ -129,15 +133,15 @@ body
 				color white
 				&:active, &:hover, &:hover
 					color white
-				&[href="#ads"],&[href="#ads-ead"]
+				&[href="#ads"],&[href="#ads-ead"],&[href="#ead-ads"]
 					background-color #1668b9 !important
-				&[href="#si"],&[href="#si-ead"]
+				&[href="#si"],&[href="#si-ead"],&[href="#ead-si"]
 					background-color #0396d8 !important
-				&[href="#ge"],&[href="#ge-ead"]
+				&[href="#ge"],&[href="#ge-ead"],&[href="#ead-ge"]
 					background-color #4ea26a !important
-				&[href="#gp"],&[href="#gp-ead"]
+				&[href="#gp"],&[href="#gp-ead"],&[href="#ead-gp"]
 					background-color #429a8a !important
-				&[href="#lo"],&[href="#lo-ead"]
+				&[href="#lo"],&[href="#lo-ead"],&[href="#ead-lo"]
 					background-color #6e5494 !important
 	
 	tbody

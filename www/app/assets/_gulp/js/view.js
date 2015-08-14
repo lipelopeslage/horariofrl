@@ -129,12 +129,12 @@
 		},
 		fillPanel : function(panel, semestre, nomeCurso, periodo, count){
 			var title = panel.find(".panel-title a"), body = panel.find(".panel-body"),
-				dias_semana = semestre.dias_semana, html = "", index = String(nomeCurso+periodo+semestre.legenda).replace(/,| |º|\(|\)/g,"");//String("_"+count);
+				dias_semana = semestre.dias_semana, html = "", index = String(nomeCurso+periodo+semestre.legenda).replace(/,| |º|\(|\)|\-/g,"");//String("_"+count);
 			
-			if(count == 0){
+			//if(count == 0){
 				//title.attr("aria-expanded", "true");	
 				//panel.find(".panel-collapse").addClass("in");
-			}
+			//}
 
 			title.attr("href","#"+index).attr("aria-controls", index);
 			panel.find(".panel-heading").attr("id", "heading"+index);
@@ -155,7 +155,7 @@
 					html += "<tr><td><bdi>"+dias_semana[dia].horario+" </bdi>  <strong>"+dias_semana[dia].professor+"</strong> <i> "+dias_semana[dia].materia+"</i></td></tr>";
 				}
 				html += "</tbody></table>";
-				return html;
+				return (dias_semana) ? html : "";
 			}
 
 		}, 

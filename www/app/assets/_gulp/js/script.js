@@ -11,8 +11,8 @@
 			_this.textUnfav = "Deseja remover este curso, ciclo e semestre como favorito?";
 			_this.textFav = "Deseja adicionar este curso, ciclo e semestre como favorito?<br>Caso escolha, este abrirá automaticamente na próxima vez que iniciar o aplicativo";
 			_this.textUpdate = "Houve mudanças nos horários, confirme para atualizar as listagens agora, ou cancele para atualizá-las na próxima vez que entrar neste aplicativo."
- 			//localStorage.removeItem("json");
-			//url = (window.navigator.onLine) ? _this.onlineJSONURL : _this.localJSONURL;
+ 			//localStorage.removeItem("json");  // só para testes no emulador
+			
 			_this.favorito = (localStorage && localStorage.favorito) ? JSON.parse(localStorage.favorito) : null;
 			
 			
@@ -26,7 +26,7 @@
 
 			document.addEventListener("online", _this.doOnlineThing, false);
 
-			//alert("init")
+			//iniciando
 
 			_this.doOfflineThing();
 
@@ -41,7 +41,7 @@
 			if(!this.hasCache()){
 				_this.doOfflineThing();
 			}else{
-				//alert('useCache')
+				//usa o cache
 				this.useCache();
 				this.checkVersions();
 				//bind da view só acontece após ajax
@@ -51,10 +51,10 @@
 		doOfflineThing : function(){
 			var _this = this, url = this.localJSONURL;
 			if(!this.hasCache()){
-				//alert("nao tem cache, carregando json")
+				//nao tem cache, carregando json
 				$.get(url+"?t="+Date.now(), function(json){
-				//	alert("json carregado")
-					_this.json = JSON.parse(json); // o json local precisa ser parseado quando estiver rodando no device
+					//_this.json = json; // --> USE ESSA LINHA NO EMULADOR
+					_this.json = JSON.parse(json); // --> USE ESSA LINHA AO COMPILAR PRO DEVICE
 					localStorage.setItem("json", JSON.stringify(_this.json));
 					_this.view.buildMenu().bind();
 					_this.view.fillCredits();
@@ -63,7 +63,7 @@
 					alert('Erro buscando arquivo local. Contate o autor.');
 				});
 			}else{
-				//alert("tem cache")
+				//tem cache
 				_this.useCache();
 				_this.view.buildMenu().bind();
 				_this.view.fillCredits();
@@ -84,8 +84,6 @@
 					_this.showWarning("Sua versão já está atualizada =)", "success", "search-update");
 					_this.json = localJSON;
 				}else{
-					//timeout = 5000;
-					//_this.showWarning("Houve mudanças nos horários, não se preocupe, seu aplicativo já está atualizado =)", "success", "search-update");
 					_this.json = newJSON;
 					localStorage.setItem("json", JSON.stringify(newJSON));
 					_this.view.updateModal(_this.textUpdate);
@@ -113,11 +111,6 @@
 		},
 		useCache : function(){
 			this.json = (localStorage && localStorage.json) ? JSON.parse(localStorage.json) : null;
-			//alert("1: "+this.json.versionID);
-			//alert("2: "+this.json.creditos);
-			//alert("3: \n"+this.json);
-
-			//console.log("ja tem no local storage");
 		},
 		hasCache : function(){
 			return Boolean(localStorage.json);
@@ -125,7 +118,6 @@
 		showWarning : function(msg, klass, id){
 			$("body").find(".alert#"+id).remove();
 			$("body").prepend("<div id='"+id+"' class='alert alert-"+klass+"'>"+msg+"</div>");
-			//console.log('warning: ', msg);
 		},
 		hideWarning : function(id){
 			$("body").find(".alert#"+id).remove();

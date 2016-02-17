@@ -15,10 +15,6 @@
 			$("body").fadeIn(100);
 			$("main").css("min-height", (win.height() - 150)+"px");
 
-
-			//alert("view init 1")
-			//this.bind();
-			
 			win.scroll(function(){
 				var top = win.scrollTop(), h2 = $(".tab-pane.active h2"), h2Top = h2.parent().offset().top;
 				if(top > h2Top){
@@ -29,7 +25,6 @@
 						h2.removeClass('fixed').parent().css('padding-top','0px');
 				}
 			});
-			//alert("view init 2")
 		},
 		reset : function(){
 			var _this = this;
@@ -56,7 +51,6 @@
 			return this;
 		},
 		bind : function (reset){
-			//alert("bind view")
 			var _this = this, navTabs = $(".nav-tabs");
 
 			navTabs.removeClass("blocked").find("li a").click(function(){
@@ -67,10 +61,10 @@
 			reset = false;
 
 			if(myApp.favorito && myApp.json) {
-			//	alert("tem favorito")
+			//tem favorito
 				this.openFavorite(); 
 			}else {
-			//	alert("nao tem favorito")
+			//nao tem favorito
 				setTimeout(function(){
 					$(".nav-tabs li:eq(0) a").trigger("click");
 				}, 300);
@@ -130,12 +124,7 @@
 		fillPanel : function(panel, semestre, nomeCurso, periodo, count){
 			var title = panel.find(".panel-title a"), body = panel.find(".panel-body"),
 				dias_semana = semestre.dias_semana, html = "", index = String(nomeCurso+periodo+semestre.legenda).replace(/,| |º|\(|\)|\-/g,"");//String("_"+count);
-			
-			//if(count == 0){
-				//title.attr("aria-expanded", "true");	
-				//panel.find(".panel-collapse").addClass("in");
-			//}
-
+	
 			title.attr("href","#"+index).attr("aria-controls", index);
 			panel.find(".panel-heading").attr("id", "heading"+index);
 			panel.find(".panel-collapse").attr("aria-labelledby", "heading"+index).attr("id",index);

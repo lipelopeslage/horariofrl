@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Blank Intel XDK and Apache Cordova Project
 ==========================================
 
@@ -83,3 +84,9 @@ your application. Set `dev.LOG = true` to enable the `console.log()` messages in
 BTW: the "`dev`” prefix refers to "device" in this context, not "develop,"
 because it grew out of a desire to build a more reliable and flexible "device
 ready" detector.
+=======
+# horariofrl
+Horários - Fatec Rubens Lara
+
+http://lipelopeslage.github.io/horariofrl/
+>>>>>>> 04b06a9c531975e388aadc4b77da8954560c06e2

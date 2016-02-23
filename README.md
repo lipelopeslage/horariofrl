@@ -2,8 +2,11 @@ Horários - Fatec Rubens Lara
 ===================
 
 Aplicação móvel para estudantes da FATEC Rubens Lara. Desenvolvida na plataforma Intel XDK como um caso de estudo, junto das bibliotecas jQuery e Fatec Bootstrap. O código mostra os avanços nos estudos na plataforma acima citada, fique livre para melhorá-los, com dicas ou pull-requests. A única coisa que importa é a troca de ideias.
+Disponível apenas para Android.
 
-*Hybrid mobile app for students of FATEC Rubens Lara. Developed inside Intel XDK's plataform as a study case, combining jQuery and Fatec Bootstrap. This code shows the studying advances on the upper mentioned plataform, feel free to improve it, with hints or pull-requests. The only thing that matters is to exchange ideas.*
+*Hybrid mobile app for students of FATEC Rubens Lara. Developed inside Intel XDK's plataform as a study case, combining jQuery and Fatec Bootstrap. This code shows the studying advances on the upper mentioned plataform, feel free to improve it, with hints or pull-requests. The only thing that matters is to exchange ideas.
+Avaiable only on Android.*
+
 
 http://lipelopeslage.github.io/horariofrl/
 

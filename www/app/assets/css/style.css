@@ -50,7 +50,8 @@ body .refresh {
 body .refresh .btn {
   position: relative !important;
   height: 30px;
-  padding-left: 20px;
+  padding: 10px 20px 32px 33px;
+  border: 0;
 }
 body .refresh .btn:before {
   display: block;
@@ -59,7 +60,7 @@ body .refresh .btn:before {
   height: 100%;
   background: url("../img/refresh-icon.png") no-repeat center;
   top: 0;
-  left: 2px;
+  left: 11px;
   background-size: contain;
   content: "";
 }

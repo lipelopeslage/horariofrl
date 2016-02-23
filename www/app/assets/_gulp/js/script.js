@@ -16,7 +16,7 @@
 			_this.favorito = (localStorage && localStorage.favorito) ? JSON.parse(localStorage.favorito) : null;
 			
 			
-			if(navigator.connection.type == "unknown" || navigator.connection.type == "none"){ 
+			if(navigator.connection.type == "none"){ 
 				// se não tiver conexão, verifica cache e então carrega json local, caso não haja cache
 				_this.doOfflineThing();
 			}else{ 

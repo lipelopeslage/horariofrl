@@ -25,8 +25,9 @@ http://lipelopeslage.github.io/horariofrl/
 Abra o arquivo **/www/app/res/horarios.json** e atualize-o como quiser. Você precisará minificar o arquivo em um outro com o nome de **horarios.min.json**, no mesmo diretório - este é o arquivo que o app utilizará em caso de problemas de conexão.
 
 - Open the **/www/app/res/horarios.json** file and update as you need. You'll need to minify this file into another named as **horarios.min.json**, inside the same folder - that's the file your app will use in case of connection problems.
-#### 
+
 ----------
+
 ###Código livre [ use pra sua faculdade também =) ]
 ####Open source [ use it to your college too =) ] 
 Sinta-se livre pra implementar melhorias e utilizar para sua instituição de ensino
@@ -40,5 +41,4 @@ Sinta-se livre pra implementar melhorias e utilizar para sua instituição de en
 Todos os ícones estão dentro do diretório **/www/app/icons/** e todos os splashscreens estão dentro do diretório **/www/app/splashs/**
 
 - All icons are inside the **/www/app/icons/** folder and all splashscreens are inside the **/www/app/splashs/** directory
-#### 
 
